@@ -2,14 +2,14 @@
 
 ![스크린샷 2022-08-25 오후 4 50 45](https://user-images.githubusercontent.com/64779472/186607176-4e221e21-3988-4fb4-ae15-7f5c71e0a0ab.png)
 
-- 해당 저장소는 단순히 [patterns (번역 사이트)](https://patterns-dev-kr.github.io/) 사이트를 보며 예제를 타입스크립트와 테스트를 직접 연습해본 레포입니다.
+- 해당 저장소는 단순히 [patterns (번역 사이트)](https://patterns-dev-kr.github.io/) 사이트를 보며 예제를 `타입스크립트`와 `테스트(Jest)`를 직접 연습해본 레포입니다.
 - [patterns (원본 사이트)](https://www.patterns.dev/)를 번역하고 정리해주신 [johnny kim](https://github.com/johnny-mh)님께 감사를 표합니다. 🙇🏻‍♂️
 
 <br />
 
 ## 📁 폴더 구조
 
-- js: JS로 구현해본 디자인 패턴을 연습한 폴더입니다.
+- ts-patterns: TypeScript로 구현해본 디자인 패턴을 연습한 폴더입니다.
   - singleton: 싱글톤 패턴 연습 폴더
 - app: React와 관련된 디자인 패턴을 연습한 폴더입니다.
 
