@@ -1,4 +1,4 @@
-let instance: Object | null = null;
+let instance: Counter | null = null;
 let counter = 0;
 
 class Counter {
