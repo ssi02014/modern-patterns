@@ -26,6 +26,7 @@
 
 ## 📃 문서 정리 목록
 
-- [Singleton 패턴](https://github.com/ssi02014/modern-patterns/blob/master/js/singleton/README.md)
+- [Singleton 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/singleton)
+- [Proxy 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/proxy)
 
 <br />
