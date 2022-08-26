@@ -12,6 +12,8 @@
 - 자바스크립트에서 Proxy 객체를 활용하면 특정 객체와의 인터렉션을 조금 더 컨트롤 할 수 있게 된다.
 - Proxy객체는 어떤 객체의 값을 설정하거나 조회할때 등의 인터렉션을 직접 제어할 수 있다.
 
+<br />
+
 ### 기본 구문
 
 ```js
@@ -128,6 +130,8 @@ const personProxy = new Proxy(person, handler);
 console.log(personProxy.job); // Error
 personProxy.name = ""; // Error
 ```
+
+<br />
 
 ## 테스트
 
