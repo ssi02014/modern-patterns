@@ -1,5 +1,10 @@
 import Counter from "./singletonTestInstance";
 
+beforeEach(() => {
+  // clear
+  Counter.init();
+});
+
 test("counter 초기값 0", () => {
   expect(Counter.getCount()).toBe(0);
 });
@@ -10,7 +15,6 @@ test("1 증가", () => {
 });
 
 test("3 증가", () => {
-  Counter.init(); // 초기화
   Counter.increment();
   Counter.increment();
   Counter.increment();
@@ -18,7 +22,6 @@ test("3 증가", () => {
 });
 
 test("1 감소", () => {
-  Counter.init(); // 초기화
   Counter.decrement();
   expect(Counter.getCount()).toBe(-1);
 });

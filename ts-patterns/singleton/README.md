@@ -23,23 +23,23 @@ class Counter {
     instance = this;
   }
 
-  getInstance() {
+  public getInstance() {
     return this;
   }
 
-  getCount() {
+  public getCount() {
     return counter;
   }
 
-  init() {
+  public init() {
     counter = 0;
   }
 
-  increment() {
+  public increment() {
     return ++counter;
   }
 
-  decrement() {
+  public decrement() {
     return --counter;
   }
 }
@@ -61,6 +61,11 @@ export default singletonCounter;
 // counter.test.ts
 import Counter from "./counterTest";
 
+beforeEach(() => {
+  // clear
+  Counter.init();
+});
+
 test("counter 초기값 0", () => {
   expect(Counter.getCount()).toBe(0);
 });
@@ -71,7 +76,6 @@ test("1 increment", () => {
 });
 
 test("3 increment", () => {
-  Counter.init(); // 초기화
   Counter.increment();
   Counter.increment();
   Counter.increment();
@@ -79,7 +83,6 @@ test("3 increment", () => {
 });
 
 test("1 decrement", () => {
-  Counter.init(); // 초기화
   Counter.decrement();
   expect(Counter.getCount()).toBe(-1);
 });

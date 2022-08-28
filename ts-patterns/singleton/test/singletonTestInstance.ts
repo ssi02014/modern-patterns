@@ -9,23 +9,23 @@ class Counter {
     instance = this;
   }
 
-  getInstance() {
+  public getInstance() {
     return this;
   }
 
-  getCount() {
+  public getCount() {
     return counter;
   }
 
-  init() {
+  public init() {
     counter = 0;
   }
 
-  increment() {
+  public increment() {
     return ++counter;
   }
 
-  decrement() {
+  public decrement() {
     return --counter;
   }
 }

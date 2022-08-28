@@ -13,13 +13,13 @@
 
 ```ts
 class Dog {
-  name: string;
+  public name: string;
 
   constructor(name: string) {
     this.name = name;
   }
 
-  bark() {
+  public bark() {
     return `왈왈!`;
   }
 }
@@ -78,14 +78,14 @@ console.log(Object.getPrototypeOf(dog1));
 
 ```ts
 class Dog {
-  name: string;
-  play?: () => void;
+  public name: string;
+  public play?: () => void;
 
   constructor(name: string) {
     this.name = name;
   }
 
-  bark() {
+  public bark() {
     return `왈왈!`;
   }
 }
@@ -114,7 +114,7 @@ class SuperDog extends Dog {
     this.name = name;
   }
 
-  fly() {
+  public fly() {
     return `날자!!`;
   }
 }

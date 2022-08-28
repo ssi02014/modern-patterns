@@ -1,12 +1,12 @@
 class Dog {
-  name: string;
-  play?: () => void;
+  public name: string;
+  public play?: () => void;
 
   constructor(name: string) {
     this.name = name;
   }
 
-  bark() {
+  public bark() {
     return `왈왈!`;
   }
 }
@@ -14,19 +14,16 @@ class Dog {
 class SuperDog extends Dog {
   constructor(name: string) {
     super(name);
-    this.name = name;
   }
 
-  fly() {
+  public fly() {
     return `날자!!`;
   }
 }
 
 const dog1 = new SuperDog("Daisy");
 
-console.log(dog1.bark()); // 왈왈!
-console.log(dog1.fly()); // 날자!!
-
+// ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 // Object.create
 const dog = {
   bark() {
@@ -36,6 +33,4 @@ const dog = {
 
 const pet1 = Object.create(dog);
 
-console.log(pet1.bark()); // 왈왈!
-
-export { Dog, SuperDog };
+export default Dog;
