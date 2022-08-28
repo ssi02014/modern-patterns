@@ -28,5 +28,6 @@
 
 - [Singleton 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/singleton)
 - [Proxy 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/proxy)
+- [Prototype 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/prototype)
 
 <br />
