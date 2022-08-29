@@ -18,7 +18,7 @@
 type ObserverFunc = (data?: string) => void;
 
 class Observable {
-  private observers: ObserverFunc[];
+  public observers: ObserverFunc[];
 
   constructor() {
     this.observers = [];
