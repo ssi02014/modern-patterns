@@ -4,14 +4,20 @@
 
 - 해당 저장소는 단순히 [patterns (번역 사이트)](https://patterns-dev-kr.github.io/) 사이트를 보며 예제를 `타입스크립트`와 `테스트(Jest)`를 직접 연습해본 레포입니다.
 - [patterns (원본 사이트)](https://www.patterns.dev/)를 번역하고 정리해주신 [johnny kim](https://github.com/johnny-mh)님께 감사를 표합니다. 🙇🏻‍♂️
+- 타입스크립트로 작성 된 테스트 코드 및 예제 코드에서 잘못된 부분 혹은 더 좋은 코드가 있다면 언제든 `Pull Request` 또는 `issue`로 전달해주시면 검토 후에 수정하도록 하겠습니다.
 
 <br />
 
 ## 📁 폴더 구조
 
-- ts-patterns: TypeScript로 구현해본 디자인 패턴을 연습한 폴더입니다.
-  - singleton: 싱글톤 패턴 연습 폴더
-- app: React와 관련된 디자인 패턴을 연습한 폴더입니다.
+- ts-patterns: 리액트가 아닌 단순 `TypeScript`만 이용해서 디자인 패턴을 연습한 폴더입니다.
+  - singleton: singleton 패턴 관련 폴더
+  - proxy: proxy 패턴 관련 폴더
+  - prototype: prototype 패턴 관련 폴더
+- app: `리액트 + TypeScript`을 이용해서 디자인 패턴을 연습한 폴더입니다.
+  - pages
+    - Observer: Observer 패턴 관련 폴더
+  - test-utils: 테스트를 위한 Custom Render Utils 폴더
 
 <br />
 
@@ -24,10 +30,16 @@
 
 <br />
 
-## 📃 문서 정리 목록
+## 📃 문서 목록
+
+### React 🙅‍♂️
 
 - [Singleton 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/singleton)
 - [Proxy 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/proxy)
 - [Prototype 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/prototype)
+
+### React 🙆‍♂️
+
+- [Observer 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/app/pages/Observer)
 
 <br />

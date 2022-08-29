@@ -21,6 +21,11 @@ class SuperDog extends Dog {
   }
 }
 
+// play 메서드 추가
+Dog.prototype.play = () => {
+  return "놀자!";
+};
+
 const dog1 = new SuperDog("Daisy");
 
 // ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
