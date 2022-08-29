@@ -11,7 +11,7 @@ class SuperDog extends Dog {
   }
 }
 
-test("Dog 생성자의 프로퍼티 name과 메서드 bark 가 존재한다", () => {
+test("Dog 클래스로 인스턴스를 생성할 시, 인자로 '그로밋'을 넣으면 name의 값은 '그로밋'이며, 메서드 bark를 호출하면 '왈왈!'이 반환된다.", () => {
   const dog = new Dog("그로밋");
 
   // Dog 클래스의 prototype이 dog의 Prototype Chain에 존재한다.
@@ -21,9 +21,10 @@ test("Dog 생성자의 프로퍼티 name과 메서드 bark 가 존재한다", ()
   expect(dog.bark()).toBe("왈왈!");
 });
 
-test("인스턴스들은 Prototype 객체를 접근할 수 있으며 인스턴스 생성 후에도 프로퍼티를 추가 할 수 있다", () => {
+test("인스턴스들은 Prototype 객체를 접근할 수 있으며, 인스턴스 생성 후에도 프로퍼티를 추가 할 수 있다", () => {
   const dog = new Dog("그로밋");
 
+  // play 메서드 추가
   Dog.prototype.play = () => {
     return "놀자!";
   };
