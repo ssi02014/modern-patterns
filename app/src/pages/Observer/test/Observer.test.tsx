@@ -1,9 +1,4 @@
-import {
-  fireEvent,
-  render,
-  screen,
-  waitFor,
-} from "../../../../testUtils/test-utils";
+import { fireEvent, render, screen } from "../../../../testUtils/test-utils";
 import ObserverPage from "..";
 import observable from "../observable";
 
@@ -36,10 +31,8 @@ describe("Observer React 기능 테스트", () => {
     // click event
     fireEvent.click(toastButton);
 
-    await waitFor(() => {
-      const toastPopup = screen.getByRole("toast");
-      expect(toastPopup).toHaveTextContent("User clicked button!");
-    });
+    const toastPopup = await screen.findByRole("toast");
+    expect(toastPopup).toHaveTextContent("User clicked button!");
   });
 
   test("toast checkbox 클릭 후에 toast popup render", async () => {
@@ -52,10 +45,8 @@ describe("Observer React 기능 테스트", () => {
     // click event
     fireEvent.click(toastCheckbox);
 
-    await waitFor(() => {
-      const toastPopup = screen.getByRole("toast");
-      expect(toastPopup).toHaveTextContent("User checked checkbox!");
-    });
+    const toastPopup = await screen.findByRole("toast");
+    expect(toastPopup).toHaveTextContent("User checked checkbox!");
   });
 
   test("버튼, 체크박스 연속 클릭해서 toast popup render", async () => {
@@ -72,10 +63,8 @@ describe("Observer React 기능 테스트", () => {
     fireEvent.click(toastCheckbox);
     fireEvent.click(toastButton);
 
-    await waitFor(() => {
-      const toastPopup = screen.getAllByRole("toast");
-      expect(toastPopup).toHaveLength(2);
-    });
+    const toastPopup = await screen.findAllByRole("toast");
+    expect(toastPopup).toHaveLength(2);
   });
 });
 
