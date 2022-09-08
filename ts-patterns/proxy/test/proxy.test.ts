@@ -13,7 +13,7 @@ test("이름을 Minjae로 설정", () => {
   expect(personProxy.name).toBe("Minjae");
 });
 
-test("나이를 28로 설정", () => {
+test("나이를 30으로 설정", () => {
   const personProxy = new Proxy(person, handler);
   personProxy.age = 30;
   expect(personProxy.age).toBe(30);
