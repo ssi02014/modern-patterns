@@ -28,14 +28,4 @@ Dog.prototype.play = () => {
 
 const dog1 = new SuperDog("Daisy");
 
-// ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-// Object.create
-const dog = {
-  bark() {
-    return `왈왈!`;
-  },
-};
-
-const pet1 = Object.create(dog);
-
 export default Dog;
