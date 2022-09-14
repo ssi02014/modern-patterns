@@ -43,11 +43,11 @@ Object.assign(Dog.prototype, dogFunctionality);
 
 const dog = new Dog("Daisy") as RealDog;
 
-console.log(dog.name); // Daisy
-console.log(dog.bark()); // 왈왈!
-console.log(dog.wagTail()); // 꼬리흔들기!
-console.log(dog.play()); // 놀기!
-console.log(dog.walk()); // 걷기!
-console.log(dog.sleep()); // 잠자기!
+dog.name; // Daisy
+dog.bark(); // 왈왈!
+dog.wagTail(); // 꼬리흔들기!
+dog.play(); // 놀기!
+dog.walk(); // 걷기!
+dog.sleep(); // 잠자기!
 
 export default Dog;

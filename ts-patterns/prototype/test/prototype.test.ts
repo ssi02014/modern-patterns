@@ -1,15 +1,4 @@
-import Dog from "../prototype";
-
-// 상속
-class SuperDog extends Dog {
-  constructor(name: string) {
-    super(name);
-  }
-
-  public fly() {
-    return `날자!`;
-  }
-}
+import { Dog, SuperDog } from "../prototype";
 
 test("Dog 클래스로 인스턴스를 생성할 시, 인자로 '그로밋'을 넣으면 name의 값은 '그로밋'이며, 메서드 bark를 호출하면 '왈왈!'이 반환된다.", () => {
   const dog = new Dog("그로밋");

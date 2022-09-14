@@ -17,7 +17,7 @@ class SuperDog extends Dog {
   }
 
   public fly() {
-    return `날자!!`;
+    return `날자!`;
   }
 }
 
@@ -28,4 +28,4 @@ Dog.prototype.play = () => {
 
 const dog1 = new SuperDog("Daisy");
 
-export default Dog;
+export { Dog, SuperDog };

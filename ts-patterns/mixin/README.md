@@ -14,7 +14,7 @@
 
 <br />
 
-### Window
+### Window에서의 Mixin
 
 - Window 객체는 `WindowOrWorkerGlobalScope`와 `WindowEventHandler` 의 Mixin으로 구성되어 있기 때문에 `setTimeout`, `setInterval`, `indexedDB`, `isSecureContext` 같은 프로퍼티를 사용할 수 있다.
 - `WindowOrWorkerGlobalScope`는 Mixin이기 때문에 해당 Mixin을 직접 사용할수는 없다.
@@ -130,7 +130,7 @@ console.log(dog.sleep()); // 잠자기!
 
 <br />
 
-## 테스팅
+## 테스트
 
 ```ts
 import Dog, { RealDog } from "../mixin";

@@ -38,6 +38,7 @@
 - [Proxy 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/proxy)
 - [Prototype 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/prototype)
 - [Mixin 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/mixin)
+- [Mediator(중재자)/Middleware 패턴](https://github.com/ssi02014/modern-patterns/tree/master/ts-patterns/mediator_middleware)
 
 ### React 🙆‍♂️
 
